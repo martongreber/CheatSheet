@@ -12,7 +12,71 @@
 		8EC12C78295B03B6001C0C5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EC12C77295B03B6001C0C5C /* Assets.xcassets */; };
 		8EC12C7B295B03B6001C0C5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EC12C79295B03B6001C0C5C /* Main.storyboard */; };
 		8EC12C7D295B03B6001C0C5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC12C7C295B03B6001C0C5C /* main.m */; };
+		8EC12C8B295B03C3001C0C5C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC12C8A295B03C3001C0C5C /* Cocoa.framework */; };
+		8EC12C91295B03C3001C0C5C /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC12C90295B03C3001C0C5C /* SourceEditorExtension.m */; };
+		8EC12C94295B03C3001C0C5C /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC12C93295B03C3001C0C5C /* SourceEditorCommand.m */; };
+		8EC12C99295B03C3001C0C5C /* CheatSheet.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8EC12C88295B03C3001C0C5C /* CheatSheet.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8EC12C9E295B03D5001C0C5C /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC12C8C295B03C3001C0C5C /* XcodeKit.framework */; };
+		8EC12C9F295B03D5001C0C5C /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC12C8C295B03C3001C0C5C /* XcodeKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8EC12CA8295B03EF001C0C5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC12CA7295B03EF001C0C5C /* main.m */; };
+		8ED11CBF295B5C4F00EE4DBC /* ServiceDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED11CBE295B5C4F00EE4DBC /* ServiceDelegate.m */; };
+		8ED11CC2295B5CD200EE4DBC /* XPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED11CC1295B5CD200EE4DBC /* XPC.m */; };
+		8ED11CC5295B5D5200EE4DBC /* XPCProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED11CC4295B5D5200EE4DBC /* XPCProtocol.m */; };
+		8ED11CCD295B602300EE4DBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED11CCC295B602300EE4DBC /* main.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8EC12C97295B03C3001C0C5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8EC12C66295B03B5001C0C5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EC12C87295B03C3001C0C5C;
+			remoteInfo = Extension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8EC12C9D295B03C3001C0C5C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8EC12C99295B03C3001C0C5C /* CheatSheet.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC12CA0295B03D5001C0C5C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8EC12C9F295B03D5001C0C5C /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC12CA3295B03EF001C0C5C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8ED11CC8295B602300EE4DBC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8EC12C6E295B03B5001C0C5C /* CheatSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheatSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +88,53 @@
 		8EC12C7A295B03B6001C0C5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EC12C7C295B03B6001C0C5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8EC12C7E295B03B6001C0C5C /* CheatSheet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheatSheet.entitlements; sourceTree = "<group>"; };
+		8EC12C88295B03C3001C0C5C /* CheatSheet.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CheatSheet.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC12C8A295B03C3001C0C5C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8EC12C8C295B03C3001C0C5C /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		8EC12C8F295B03C3001C0C5C /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		8EC12C90295B03C3001C0C5C /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		8EC12C92295B03C3001C0C5C /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		8EC12C93295B03C3001C0C5C /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		8EC12C95295B03C3001C0C5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EC12C96295B03C3001C0C5C /* Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
+		8EC12CA5295B03EF001C0C5C /* XPCservice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XPCservice; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EC12CA7295B03EF001C0C5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8ED11CBD295B5C4F00EE4DBC /* ServiceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceDelegate.h; sourceTree = "<group>"; };
+		8ED11CBE295B5C4F00EE4DBC /* ServiceDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServiceDelegate.m; sourceTree = "<group>"; };
+		8ED11CC0295B5CD200EE4DBC /* XPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPC.h; sourceTree = "<group>"; };
+		8ED11CC1295B5CD200EE4DBC /* XPC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPC.m; sourceTree = "<group>"; };
+		8ED11CC3295B5D5200EE4DBC /* XPCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPCProtocol.h; sourceTree = "<group>"; };
+		8ED11CC4295B5D5200EE4DBC /* XPCProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPCProtocol.m; sourceTree = "<group>"; };
+		8ED11CCA295B602300EE4DBC /* XPCService_test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XPCService_test; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED11CCC295B602300EE4DBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8ED11CD1295B679C00EE4DBC /* entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = entitlements.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8EC12C6B295B03B5001C0C5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC12C85295B03C3001C0C5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC12C8B295B03C3001C0C5C /* Cocoa.framework in Frameworks */,
+				8EC12C9E295B03D5001C0C5C /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC12CA2295B03EF001C0C5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ED11CC7295B602300EE4DBC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +148,10 @@
 			isa = PBXGroup;
 			children = (
 				8EC12C70295B03B5001C0C5C /* CheatSheet */,
+				8EC12C8E295B03C3001C0C5C /* Extension */,
+				8EC12CA6295B03EF001C0C5C /* XPCservice */,
+				8ED11CCB295B602300EE4DBC /* XPCService_test */,
+				8EC12C89295B03C3001C0C5C /* Frameworks */,
 				8EC12C6F295B03B5001C0C5C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				8EC12C6E295B03B5001C0C5C /* CheatSheet.app */,
+				8EC12C88295B03C3001C0C5C /* CheatSheet.appex */,
+				8EC12CA5295B03EF001C0C5C /* XPCservice */,
+				8ED11CCA295B602300EE4DBC /* XPCService_test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +182,51 @@
 			path = CheatSheet;
 			sourceTree = "<group>";
 		};
+		8EC12C89295B03C3001C0C5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EC12C8A295B03C3001C0C5C /* Cocoa.framework */,
+				8EC12C8C295B03C3001C0C5C /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EC12C8E295B03C3001C0C5C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8EC12C8F295B03C3001C0C5C /* SourceEditorExtension.h */,
+				8EC12C90295B03C3001C0C5C /* SourceEditorExtension.m */,
+				8EC12C92295B03C3001C0C5C /* SourceEditorCommand.h */,
+				8EC12C93295B03C3001C0C5C /* SourceEditorCommand.m */,
+				8EC12C95295B03C3001C0C5C /* Info.plist */,
+				8EC12C96295B03C3001C0C5C /* Extension.entitlements */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8EC12CA6295B03EF001C0C5C /* XPCservice */ = {
+			isa = PBXGroup;
+			children = (
+				8EC12CA7295B03EF001C0C5C /* main.m */,
+				8ED11CBD295B5C4F00EE4DBC /* ServiceDelegate.h */,
+				8ED11CBE295B5C4F00EE4DBC /* ServiceDelegate.m */,
+				8ED11CC0295B5CD200EE4DBC /* XPC.h */,
+				8ED11CC1295B5CD200EE4DBC /* XPC.m */,
+				8ED11CC3295B5D5200EE4DBC /* XPCProtocol.h */,
+				8ED11CC4295B5D5200EE4DBC /* XPCProtocol.m */,
+			);
+			path = XPCservice;
+			sourceTree = "<group>";
+		};
+		8ED11CCB295B602300EE4DBC /* XPCService_test */ = {
+			isa = PBXGroup;
+			children = (
+				8ED11CD1295B679C00EE4DBC /* entitlements.plist */,
+				8ED11CCC295B602300EE4DBC /* main.m */,
+			);
+			path = XPCService_test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,15 +237,69 @@
 				8EC12C6A295B03B5001C0C5C /* Sources */,
 				8EC12C6B295B03B5001C0C5C /* Frameworks */,
 				8EC12C6C295B03B5001C0C5C /* Resources */,
+				8EC12C9D295B03C3001C0C5C /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8EC12C98295B03C3001C0C5C /* PBXTargetDependency */,
 			);
 			name = CheatSheet;
 			productName = CheatSheet;
 			productReference = 8EC12C6E295B03B5001C0C5C /* CheatSheet.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8EC12C87295B03C3001C0C5C /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EC12C9A295B03C3001C0C5C /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				8EC12C84295B03C3001C0C5C /* Sources */,
+				8EC12C85295B03C3001C0C5C /* Frameworks */,
+				8EC12C86295B03C3001C0C5C /* Resources */,
+				8EC12CA0295B03D5001C0C5C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extension;
+			productName = Extension;
+			productReference = 8EC12C88295B03C3001C0C5C /* CheatSheet.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+		8EC12CA4295B03EF001C0C5C /* XPCservice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EC12CA9295B03EF001C0C5C /* Build configuration list for PBXNativeTarget "XPCservice" */;
+			buildPhases = (
+				8EC12CA1295B03EF001C0C5C /* Sources */,
+				8EC12CA2295B03EF001C0C5C /* Frameworks */,
+				8EC12CA3295B03EF001C0C5C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XPCservice;
+			productName = XPCservice;
+			productReference = 8EC12CA5295B03EF001C0C5C /* XPCservice */;
+			productType = "com.apple.product-type.tool";
+		};
+		8ED11CC9295B602300EE4DBC /* XPCService_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED11CCE295B602300EE4DBC /* Build configuration list for PBXNativeTarget "XPCService_test" */;
+			buildPhases = (
+				8ED11CC6295B602300EE4DBC /* Sources */,
+				8ED11CC7295B602300EE4DBC /* Frameworks */,
+				8ED11CC8295B602300EE4DBC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XPCService_test;
+			productName = XPCService_test;
+			productReference = 8ED11CCA295B602300EE4DBC /* XPCService_test */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +311,15 @@
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					8EC12C6D295B03B5001C0C5C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					8EC12C87295B03C3001C0C5C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					8EC12CA4295B03EF001C0C5C = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					8ED11CC9295B602300EE4DBC = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
@@ -116,6 +338,9 @@
 			projectRoot = "";
 			targets = (
 				8EC12C6D295B03B5001C0C5C /* CheatSheet */,
+				8EC12C87295B03C3001C0C5C /* Extension */,
+				8EC12CA4295B03EF001C0C5C /* XPCservice */,
+				8ED11CC9295B602300EE4DBC /* XPCService_test */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +352,13 @@
 			files = (
 				8EC12C78295B03B6001C0C5C /* Assets.xcassets in Resources */,
 				8EC12C7B295B03B6001C0C5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC12C86295B03C3001C0C5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +375,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8EC12C84295B03C3001C0C5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC12C91295B03C3001C0C5C /* SourceEditorExtension.m in Sources */,
+				8EC12C94295B03C3001C0C5C /* SourceEditorCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EC12CA1295B03EF001C0C5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED11CC2295B5CD200EE4DBC /* XPC.m in Sources */,
+				8ED11CC5295B5D5200EE4DBC /* XPCProtocol.m in Sources */,
+				8ED11CBF295B5C4F00EE4DBC /* ServiceDelegate.m in Sources */,
+				8EC12CA8295B03EF001C0C5C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ED11CC6295B602300EE4DBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED11CCD295B602300EE4DBC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8EC12C98295B03C3001C0C5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8EC12C87295B03C3001C0C5C /* Extension */;
+			targetProxy = 8EC12C97295B03C3001C0C5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8EC12C79295B03B6001C0C5C /* Main.storyboard */ = {
@@ -286,7 +554,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.murculus.CheatSheet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.murculus.cheatsheet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
@@ -312,9 +580,109 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.murculus.CheatSheet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.murculus.cheatsheet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		8EC12C9B295B03C3001C0C5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YV8D42CRGT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Extension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CheatSheet;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.murculus.cheatsheet.extension;
+				PRODUCT_NAME = CheatSheet;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		8EC12C9C295B03C3001C0C5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YV8D42CRGT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Extension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CheatSheet;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.murculus.cheatsheet.extension;
+				PRODUCT_NAME = CheatSheet;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		8EC12CAA295B03EF001C0C5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YV8D42CRGT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.murculus.cheatsheet.xpc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8EC12CAB295B03EF001C0C5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YV8D42CRGT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.murculus.cheatsheet.xpc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8ED11CCF295B602300EE4DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XPCService_test/entitlements.plist;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YV8D42CRGT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.murculus.cheatsheet.xpctest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8ED11CD0295B602300EE4DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = XPCService_test/entitlements.plist;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YV8D42CRGT;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.murculus.cheatsheet.xpctest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -335,6 +703,33 @@
 			buildConfigurations = (
 				8EC12C82295B03B6001C0C5C /* Debug */,
 				8EC12C83295B03B6001C0C5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EC12C9A295B03C3001C0C5C /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EC12C9B295B03C3001C0C5C /* Debug */,
+				8EC12C9C295B03C3001C0C5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8EC12CA9295B03EF001C0C5C /* Build configuration list for PBXNativeTarget "XPCservice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8EC12CAA295B03EF001C0C5C /* Debug */,
+				8EC12CAB295B03EF001C0C5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ED11CCE295B602300EE4DBC /* Build configuration list for PBXNativeTarget "XPCService_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED11CCF295B602300EE4DBC /* Debug */,
+				8ED11CD0295B602300EE4DBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
